@@ -6,7 +6,7 @@ from typing import Tuple
 class Subject(Enum):
     History: str = 'History'
     Maths: str = 'Maths'
-    Physics: str = 'Pysics'
+    Physics: str = 'Physics'
 
 
 class Hobby(Enum):
