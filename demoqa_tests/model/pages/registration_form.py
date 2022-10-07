@@ -7,6 +7,9 @@ from selene.support.shared.jquery_style import ss
 from demoqa_tests.model.controls import modal
 from demoqa_tests.model.controls.datepicker import DatePicker
 from demoqa_tests.model.controls.dropdown import DropDown
+
+from demoqa_tests.model.application import google
+
 from tests.test_data.users import Subject, Hobby
 
 from demoqa_tests.utils import path
@@ -20,9 +23,9 @@ class RegistrationForm:
 
     def given_opened(self):
         browser.open('/automation-practice-form')
-        ads = ss('[id^=google_ads][id$=container__]')
-        if ads.with_(timeout=10).wait.until(have.size_greater_than_or_equal(3)):
-            ads.perform(command.js.remove)
+        google.remove_ads(amount=3, timeout=6)
+        google.remove_ads(amount=1, timeout=6)
+
         return self
 
     def set_full_name(self, first_name: str, last_name: str):

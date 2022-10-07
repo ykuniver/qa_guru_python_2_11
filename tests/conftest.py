@@ -12,3 +12,5 @@ def browser_management():
         os.getenv('selene.hold_browser_open', 'false').lower() == 'true'
     )
     browser.config.timeout = float(os.getenv('selene.timeout', '3'))
+
+    yield
