@@ -2,7 +2,13 @@ from demoqa_tests.model.application import app
 
 from tests.test_data.users import student
 
-# FluentPageObject with no StepsObject
+
+# A test based on StepsObject model
+def test_register_user():
+    app.user_operations.register()
+
+
+# A test based on just FluentPageObject (with no StepsObject)
 def test_submit_student():
     (
         # GIVEN
@@ -44,6 +50,3 @@ def test_submit_student():
     )
 
 
-# StepsObject
-def test_register_user():
-    app.user_operations.register()
