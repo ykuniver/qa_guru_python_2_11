@@ -1,4 +1,3 @@
-from demoqa_tests.model import app
 from demoqa_tests.model.application import app
 
 from tests.test_data.users import student
