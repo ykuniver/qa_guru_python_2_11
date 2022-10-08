@@ -5,7 +5,7 @@ from tests.test_data.users import student
 
 # A test based on StepsObject model
 def test_register_student():
-    app.user_operations.register()
+    app.student_operations.register()
 
 
 # A test with FluentPageObjects (with no StepsObject)

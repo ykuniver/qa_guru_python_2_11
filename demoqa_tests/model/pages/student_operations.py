@@ -2,7 +2,7 @@ from demoqa_tests.model.pages.registration_form import RegistrationForm
 from tests.test_data.users import student
 
 
-class UserOperations:
+class StudentOperations:
 
     def __init__(self):
         self.registration_form = RegistrationForm()
