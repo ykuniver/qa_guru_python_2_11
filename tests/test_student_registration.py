@@ -4,11 +4,11 @@ from tests.test_data.users import student
 
 
 # A test based on StepsObject model
-def test_register_user():
+def test_register_student():
     app.user_operations.register()
 
 
-# A test based on just FluentPageObject (with no StepsObject)
+# A test with FluentPageObjects (with no StepsObject)
 def test_submit_student():
     (
         # GIVEN

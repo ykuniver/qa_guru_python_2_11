@@ -1,5 +1,5 @@
 from demoqa_tests.model.pages.registration_form import RegistrationForm
-from demoqa_tests.model.pages.user_operations import UserOperations
+from demoqa_tests.model.pages.student_operations import UserOperations
 from tests.test_data.users import student
 
 # For implementation without StepsObject

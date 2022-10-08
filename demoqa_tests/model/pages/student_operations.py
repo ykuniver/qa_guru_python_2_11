@@ -1,11 +1,6 @@
 from demoqa_tests.model.pages.registration_form import RegistrationForm
 from tests.test_data.users import student
 
-# For implementation without StepsObject
-registration_form = RegistrationForm()
-
-
-# For implementation with StepsObject
 
 class UserOperations:
 
